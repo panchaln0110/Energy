@@ -7,8 +7,21 @@ H5: 14 Lato
 H6: 12 Lato
 */
 
-.w-60{
-    width:60%;
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+f section {
+    overflow-x: hidden;
+}
+
+.w-60 {
+    width: 60%;
 }
 
 .navbar {
@@ -33,8 +46,7 @@ H6: 12 Lato
     padding: 0.5rem;
 }
 
-/
-.pack-positions {
+/ .pack-positions {
     max-width: 1480px;
     margin: 0 auto;
 }
@@ -341,6 +353,9 @@ h6 {
     width: 200px;
 }
 
+.img-16 {
+    width: 20%;
+}
 
 .sub-nav {
     display: none;
@@ -449,11 +464,9 @@ button.btn.btn-secondary.dropdown-toggle{
 }
 
 #l-banner {
-
     height: 100%;
     background: url(../images/hsi-moible.jpg) center;
     background-size: cover;
-
 }
 
 .l-banner-pack-position {
@@ -467,11 +480,17 @@ button.btn.btn-secondary.dropdown-toggle{
     background-size: cover;
 
 }
+
 #l-banner-rhc {
     height: 100%;
     background: url(../images/Reliance_WaterHeater_Banner.png) center;
     background-size: cover;
+}
 
+#l-banner-wireless {
+    height: 100%;
+    background: url(../images/wireless_residential.png) center;
+    background-size: cover;
 }
 
 
@@ -485,8 +504,18 @@ button.btn.btn-secondary.dropdown-toggle{
 .l-banner-position {
     margin-top: 210px;
 }
+
+.l-banner-position-GE {
+    margin-top: 210px;
+}
+
 .l-banner-bus-hsi-position {
     margin-top: 166px;
+    margin-bottom: 30px;
+}
+
+.l-banner.position-img {
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -572,13 +601,15 @@ button.btn.btn-secondary.dropdown-toggle{
 .section-paths {
     padding: 1rem 0;
 }*/
+
 .HIS_image1 {
     margin-top: 10px;
     width: 50%;
     padding-bottom: 10px;
 }
-.btn-padding{
-  padding-left: 25px;
+
+.btn-padding {
+    padding-left: 25px;
     padding-right: 25px;
 }
 
@@ -587,7 +618,8 @@ button.btn.btn-secondary.dropdown-toggle{
 
     text-align: left;
 }
-.pathElement-center{
+
+.pathElement-center {
     text-align: center;
 }
 
@@ -819,6 +851,11 @@ div.col-sm-2.col-6 {
         background-size: cover;
 
     }
+    #l-banner-wireless {
+        height: 100%;
+        background: url(../images/wireless_residential.png) center;
+        background-size: cover;
+    }
     .l-banner-rhc-position {
         padding-bottom: 100px;
         margin-top: 80px;
@@ -830,18 +867,22 @@ div.col-sm-2.col-6 {
         margin-top: 175px;
     }
     .l-banner-position {
-        /*
-        padding-bottom: 157px;
-        margin-top: 27px;
-*/
         padding-bottom: 160px;
         margin-top: 100px;
+    }
+    .l-banner-position-GE {
+        padding-bottom: 130px;
+        margin-top: 55px;
 
     }
-    
+    .l-banner-position-img {
+        margin-top: 20px;
+        padding-bottom: 100px;
+    }
+
     .l-banner-bus-hsi-position {
-    padding-bottom: 82px;
-    margin-top: 167px;
+        padding-bottom: 82px;
+        margin-top: 167px;
     }
     .btn-shadow {
         box-shadow: 0 2px rgba(0, 0, 0, 0.2);
@@ -922,18 +963,22 @@ div.col-sm-2.col-6 {
  ********************/
 
 @media only screen and (max-width: 990px) and (min-width: 576px) {
-/*
+    /*
     .mt-30{
         margin-top: 40px;
     }
     
 */
-/*    reliance Home comfort check available button*/
-
-    .change-position{
-     float: left;
+    /*    reliance Home comfort check available button*/
+    .change-position {
+        float: left;
     }
-    
+    .pa-10 {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
     /*refer-friend*/
     .refer-friend-text-position {
         position: relative;
@@ -955,17 +1000,22 @@ div.col-sm-2.col-6 {
         background-size: cover;
 
     }
-        #l-banner-bus-hsi {
+    #l-banner-bus-hsi {
         height: 100%;
         background: url(../images/HSI_Business_Tablet.png) center;
         background-size: cover;
 
     }
-        #l-banner-enrg {
+    #l-banner-enrg {
         height: 100%;
         background: url(../images/GE-img_tablet.png) center;
         background-size: cover;
 
+    }
+    #l-banner-wireless {
+        height: 100%;
+        background: url(../images/wireless-tablet.png) center;
+        background-size: cover;
     }
 
     .l-banner-pack-position {
@@ -976,13 +1026,12 @@ div.col-sm-2.col-6 {
         margin-top: 27px;
         margin-bottom: 128px;
     }
-        .l-banner-bus-hsi-position {
+    .l-banner-position-GE {
         margin-top: 27px;
         margin-bottom: 128px;
     }
-    .l-banner-rhc-position {
-        margin-top: 27px;
-        margin-bottom: 100px;
+    .l-banner-position-img {
+        margin-bottom: 73px;
     }
 
     .btn-position {
@@ -1024,12 +1073,12 @@ div.col-sm-2.col-6 {
         margin-top: 10px;
         text-align: right;
     }
-    .text-left{
+    .text-left {
         text-align: left!important;
     }
 
 
-/*
+    /*
     ul.footer-links {
         padding-left: 0px;
     }
@@ -1076,19 +1125,25 @@ div.col-sm-2.col-6 {
 
     }
 */
-    .imgmb-20{
+    .text-right {
+        text-align: left!important;
+        padding-left: 2%;
+    }
+    .imgmb-20 {
         margin-bottom: 20px;
     }
-    
-    .mb-45{
-    margin-bottom: 45px;
+
+    .mb-45 {
+        margin-bottom: 45px;
+    }
+    .mt-330 {
+        margin-top: -330px;
     }
 
-
-    .change-width{
+    .change-width {
         width: 45%;
     }
-    
+
     .btn {
         max-width: 420px;
     }
@@ -1096,7 +1151,7 @@ div.col-sm-2.col-6 {
         display: block;
         background-color: #00457C;
     }
-    .btn-center{
+    .btn-center {
         text-align: center;
     }
     .section-paths {
@@ -1108,14 +1163,19 @@ div.col-sm-2.col-6 {
         background: url(../images/kids-img_mobile.png) center;
         background-size: cover;
     }
-        #l-banner-enrg {
+    #l-banner-enrg {
         height: 100%;
         background: url(../images/GEgasmobile-img.png) center;
         background-size: cover;
     }
-            #l-banner-bus-hsi {
+    #l-banner-bus-hsi {
         height: 100%;
         background: url(../images/HSI_Business_Mobile.png) center;
+        background-size: cover;
+    }
+    #l-banner-wireless {
+        height: 100%;
+        background: url(../images/wireless_res_mobile.png) center;
         background-size: cover;
     }
 
@@ -1165,7 +1225,9 @@ div.col-sm-2.col-6 {
     padding-left: 0px;
     margin-bottom: -8px;
 }
+
 /*Popover*/
+
 .popover {
     max-width: 700px;
     border-radius: 0px!important;
@@ -1215,6 +1277,7 @@ ul.popover_subtext li:last-child {
     color: #4A90E2!important;
     font-weight: 900;
 }
+
 .popover_link {
     color: #FFFFFF!important;
     text-decoration: none!important;
@@ -1291,6 +1354,7 @@ ul.popover_subtext li:last-child {
     margin-bottom: -9px;
     height: 120px;
 }
+
 .btn-secondary {
     border-radius: 0px;
     border-color: #407EC9;
